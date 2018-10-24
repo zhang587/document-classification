@@ -84,7 +84,7 @@ def getAccuracy(testSet, predictions):
 			correct += 1
 	return (correct/float(len(testSet))) * 100.0
  
-def main():
+if __name__ == "__main__":
 	filename = 'pima-indians-diabetes.data.csv'
 	splitRatio = 0.67
 	dataset = loadCsv(filename)
