@@ -1,5 +1,5 @@
 # document-classification
-This repository implements Supervised Document Classification in python. The document classifier classifies various user inputs into specific categories shown in the Behavioral_Term_Association.csv. It uses sklearn MultinomialNB classifier with Feature Selection.
+This repository implements Supervised Document Classification in python. The document classifier classifies various user inputs into specific categories in the Behavioral_Term_Association.csv. It uses sklearn MultinomialNB classifier with Feature Selection.
 
 # to-run
 Please use jupyter notebook to run HCC Classifier.ipynb
