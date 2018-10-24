@@ -5,7 +5,7 @@ This repository implements Supervised Document Classification in python. The doc
 Please use jupyter notebook to run HCC Classifier.ipynb
 
 # observations
-Out of the three Naive Bayes options (GaussianNB, BernoulliNB, MultinomialNB) in sklearn, Multinomial Naive Bayes without feature selection is already a strong and simple classifier. Therefore there is no improvement in accuracy and time taken respectively on using feature selection. The accuracy score is not high enough, this is presumably because Naive Bayes Classifier considers words independently of each other and focusses on their counts. Overall, the MultinomialNB classifier performs better than GaussianNB.
+Out of the three Naive Bayes options (GaussianNB, BernoulliNB, MultinomialNB) in sklearn, Multinomial Naive Bayes without feature selection is already a strong and simple classifier. Therefore there is no improvement in accuracy and time taken respectively on using feature selection. The accuracy score is not high enough, this is presumably because Naive Bayes Classifier considers words independently of each other and focusses on their counts. Overall, the MultinomialNB classifier performs better than GaussianNB, probably because the attributes of the dataset itself (MultinomialNB fits the data distribution better) or the vectorization process from sklearn.
 
 # sources:
 
