@@ -2,7 +2,7 @@ import csv
 import random
 import math
  
-def loadCsv(<Behavioral_Term_Association.csv>):
+def loadCsv(filename):
 	lines = csv.reader(open(filename, "rb"))
 	dataset = list(lines)
 	for i in range(len(dataset)):
@@ -85,7 +85,7 @@ def getAccuracy(testSet, predictions):
 	return (correct/float(len(testSet))) * 100.0
  
 if __name__ == "__main__":
-	filename = 'pima-indians-diabetes.data.csv'
+	filename = 'Behavioral_Term_Association.csv'
 	splitRatio = 0.67
 	dataset = loadCsv(filename)
 	trainingSet, testSet = splitDataset(dataset, splitRatio)
