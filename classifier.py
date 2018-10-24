@@ -84,7 +84,7 @@ def getAccuracy(testSet, predictions):
 			correct += 1
 	return (correct/float(len(testSet))) * 100.0
  
-if __name__ == "__main__":
+def main():
 	filename = 'Behavioral_Term_Association.csv'
 	splitRatio = 0.67
 	dataset = loadCsv(filename)
@@ -97,4 +97,5 @@ if __name__ == "__main__":
 	accuracy = getAccuracy(testSet, predictions)
 	print('Accuracy: {0}%').format(accuracy)
  
-main()
+if __name__ == "__main__":
+	main()
