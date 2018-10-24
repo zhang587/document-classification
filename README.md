@@ -1,11 +1,11 @@
 # document-classification
-This repository implements Supervised Document Classification in python. The document classifier classifies various user inputs into specific categories in the Behavioral_Term_Association.csv. It uses sklearn MultinomialNB classifier with Feature Selection.
+This repository implements Supervised Document Classification in python. The document classifier classifies various user inputs into specific categories in the Behavioral_Term_Association.csv. The classifier.py is the homemade version of Gaussian Naive Bayes in python from scratch, while the HCC Classifier.ipynb uses sklearn MultinomialNB classifier with Feature Selection.
 
 # to-run
 Please use jupyter notebook to run HCC Classifier.ipynb
 
 # observations
-Out of the three Naive Bayes options (GaussianNB, BernoulliNB, MultinomialNB) in sklearn, Multinomial Naive Bayes without feature selection is already a strong and simple classifier. Therefore there is no improvement in accuracy and time taken respectively on using feature selection. The accuracy score is not high enough on the first few runs, this is presumably because Naive Bayes Classifier considers words independently of each other and focusses on their counts. 
+Out of the three Naive Bayes options (GaussianNB, BernoulliNB, MultinomialNB) in sklearn, Multinomial Naive Bayes without feature selection is already a strong and simple classifier. Therefore there is no improvement in accuracy and time taken respectively on using feature selection. The accuracy score is not high enough, this is presumably because Naive Bayes Classifier considers words independently of each other and focusses on their counts. Overall, the MultinomialNB classifier performs better than GaussianNB.
 
 # sources:
 
